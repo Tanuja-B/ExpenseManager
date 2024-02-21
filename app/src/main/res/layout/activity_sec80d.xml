@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".sec80dActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="327dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:elevation="20dp"
+        android:padding="20dp"
+        app:cardElevation="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Section 80D"
+            android:gravity="center"
+            android:textColor="#8D0DA2"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Section 80D includes a deduction of Rs 5,000 for any payments made towards preventive health check-ups. This deduction will be within the overall limit of Rs 25,000/Rs 50,000, as the case may be. This deduction can also be claimed either by the individual for himself, his spouse, dependent children or parents.
+"
+                android:textAppearance="?android:textAppearanceMedium" />
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Deductions under Section 80D:"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment for medical insurance premium (mode other than cash) /contribution to CGHS.
+Payment of medical insurance premium for resident Sr. Citizen – (mode other than cash)
+Payment made for preventive health check up."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:id="@+id/back2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:text="Back"
+                        app:backgroundTint="#192EA5"  />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:id="@+id/next2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Next"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        app:backgroundTint="#192EA5" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

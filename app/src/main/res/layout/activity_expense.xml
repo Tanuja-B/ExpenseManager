@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ExpenseActivity">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/amt_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter Amount"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/type_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Enter Type"
+            android:padding="15dp" />
+
+        <EditText
+            android:id="@+id/note_exp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:baselineAligned="false"
+            android:hint="Enter Note"
+            android:padding="15dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:id="@+id/save_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_green_dark"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:backgroundTint="@android:color/holo_green_dark"
+                        android:text="SAVE"
+                        app:backgroundTint="#22CF29" />
+
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:id="@+id/cancel_exp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/holo_red_dark"
+                        android:text="CANCEL"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        app:backgroundTint="#D31717" />
+
+                </RelativeLayout>
+
+             </LinearLayout>
+
+        </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/expense_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
+
+

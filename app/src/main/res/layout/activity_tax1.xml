@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tax1Activity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Income Tax Calculator"
+        tools:ignore="MissingConstraints"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="#BF19DB"/>
+
+    <Button
+        android:id="@+id/go"
+        android:layout_width="128dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/yellow"
+        android:text="Calculate"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.17"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit5"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="123dp"
+        android:layout_height="38dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/yellow"
+        android:enabled="false"
+        android:text="Continue"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/table"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit5"
+         />
+
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Standard  Deduction"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit1"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388" />
+
+    <EditText
+        android:id="@+id/edit5"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:labelFor="@id/edit1"
+        android:text="50000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/edit4"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:labelFor="@id/edit1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.291"
+        tools:ignore="Autofill" />
+
+
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="39dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="LTA"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit1"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318" />
+
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="Special Allowance"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit1"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <EditText
+        android:id="@+id/edit2"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:labelFor="@id/edit1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/edit3"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:labelFor="@id/edit1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.212"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:text="HRA"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit1"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="143dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="number|numberDecimal"
+        android:labelFor="@id/edit1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Basic Salary"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edit1"
+        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="389dp"
+        android:layout_height="239dp"
+        android:layout_marginBottom="32dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:id="@+id/th1"
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="172dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Basic Pay"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t1"
+                android:layout_width="213dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/th11"
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="172dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="HRA"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t2"
+                android:layout_width="213dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/th12"
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="172dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="SA"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t3"
+                android:layout_width="213dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/th13"
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="172dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="LTA"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t4"
+                android:layout_width="213dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/th14"
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:elevation="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView41"
+                android:layout_width="172dp"
+                android:layout_height="56dp"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="STANDARD Deduction"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/t5"
+                android:layout_width="213dp"
+                android:layout_height="match_parent"
+                android:background="#FFFFFF"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/th15"
+            android:layout_width="348dp"
+            android:layout_height="49dp"
+            android:elevation="5dp"
+            android:orientation="horizontal" />
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

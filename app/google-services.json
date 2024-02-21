@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "210815553429",
+    "project_id": "incxp-1b636",
+    "storage_bucket": "incxp-1b636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210815553429:android:5021cef74a78ed34ad309c",
+        "android_client_info": {
+          "package_name": "com.example.xpensemanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBl3xErL5d4GnpJN1rfYoeQxG8S6f7TLRY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
